@@ -1,0 +1,18 @@
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Сборка Java
+target/
+
+# Сборка C++
+build/
+cmake-build-*/
+
+# Секреты: пароли и токены НИКОГДА не попадают в git
+.env
+
+# Мусор ОС
+.DS_Store
+Thumbs.db
