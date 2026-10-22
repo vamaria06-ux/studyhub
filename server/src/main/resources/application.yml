@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: studyhub-server
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/studyhub}
+    username: ${DB_USER:studyhub}
+    password: ${DB_PASSWORD:dev_password_change_me}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
